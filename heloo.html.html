@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VIDCOD</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: #1e88e5;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        header h1 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: white;
+            cursor: default;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #ffc107;
+        }
+        
+        main {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        section {
+            background: #222;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s ease;
+        }
+        
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.9);
+        }
+        
+        section h2 {
+            margin-top: 0;
+            color: #1e88e5;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #1e88e5;
+            padding-bottom: 0.3rem;
+        }
+        
+        ul.resources {
+            list-style: disc inside;
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul.resources li {
+            margin-bottom: 0.7rem;
+        }
+        
+        ul.resources a {
+            color: #90caf9;
+            text-decoration: none;
+        }
+        
+        ul.resources a:hover {
+            text-decoration: underline;
+            color: #ffc107;
+        }
+        
+        .video-container iframe {
+            width: 100%;
+            height: 315px;
+            border-radius: 10px;
+            border: none;
+        }
+        
+        footer {
+            background: #1e88e5;
+            padding: 1rem 0;
+            text-align: center;
+            color: white;
+            font-weight: 500;
+            margin-top: 3rem;
+        }
+        
+        .btn {
+            background: #ffc107;
+            color: #121212;
+            border: none;
+            padding: 0.5rem 1.2rem;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn:hover {
+            background: #ffca28;
+        }
+        
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav a {
+                margin-left: 0;
+                margin-right: 1rem;
+                display: inline-block;
+                margin-top: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>VIDCOD</h1>
+        <nav>
+            <a href="#coding">Coding</a>
+            <a href="#projects">Projects</a>
+            <a href="#video-editing">Video Editing</a>
+            <a href="#minecraft-hosting">Minecraft Hosting</a>
+            <a href="#free-movies">Free Movies</a>
+            <a href="#discord-app">Discord</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="coding" aria-label="Coding Section">
+            <h2>Coding Resources</h2>
+            <p>Explore these categories to enhance your coding skills:</p>
+            <h3>Web Development</h3>
+            <ul class="resources">
+                <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">FreeCodeCamp</a></li>
+                <li><a href="https://www.codecademy.com/learn/paths/web-development" target="_blank" rel="noopener">Codecademy Web Development</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+            </ul>
+
+            <h3>App Development</h3>
+            <ul class="resources">
+                <li><a href="https://developer.android.com/courses" target="_blank" rel="noopener">Android Developer Training</a></li>
+                <li><a href="https://developer.apple.com/develop/" target="_blank" rel="noopener">Apple Developer Resources</a></li>
+                <li><a href="https://www.raywenderlich.com/" target="_blank" rel="noopener">Ray Wenderlich Tutorials</a></li>
+            </ul>
+
+            <h3>Other Languages (C, C++, etc.)</h3>
+            <ul class="resources">
+                <li><a href="https://www.learn-c.org/" target="_blank" rel="noopener">Learn C</a></li>
+                <li><a href="https://www.learncpp.com/" target="_blank" rel="noopener">Learn C++</a></li>
+                <li><a href="https://www.geeksforgeeks.org/c-programming-language/" target="_blank" rel="noopener">GeeksforGeeks C Programming</a></li>
+            </ul>
+        </section>
+
+        <section id="projects" aria-label="Projects Section">
+            <h2>Projects</h2>
+            <p>Build real-world projects to sharpen your skills. Check out these ideas and tutorials:</p>
+            <h3>Web Development Projects</h3>
+            <ul class="resources">
+                <li><a href="https://www.frontendmentor.io/challenges" target="_blank" rel="noopener">Frontend Mentor - Web Design Challenges</a></li>
+                <li><a href="https://scrimba.com/learn/learnreact" target="_blank" rel="noopener">Build React Projects - Scrimba</a></li>
+                <li><a href="https://github.com/taniarascia/sandbox" target="_blank" rel="noopener">Simple Web Project Examples - GitHub</a></li>
+            </ul>
+
+            <h3>App Development Projects</h3>
+            <ul class="resources">
+                <li><a href="https://www.raywenderlich.com/ios/projects" target="_blank" rel="noopener">iOS App Projects - Ray Wenderlich</a></li>
+                <li><a href="https://developer.android.com/courses/pathways/android-basics-kotlin" target="_blank" rel="noopener">Android Kotlin Basics Projects</a></li>
+                <li><a href="https://github.com/52inc/PocketBible" target="_blank" rel="noopener">Open Source Android App Examples</a></li>
+            </ul>
+
+            <h3>Other Language Projects (C, C++, etc.)</h3>
+            <ul class="resources">
+                <li><a href="https://www.geeksforgeeks.org/c-program-to-implement-a-simple-database-management-system/" target="_blank" rel="noopener">Simple DBMS in C - GeeksforGeeks</a></li>
+                <li><a href="https://github.com/TheAlgorithms/C" target="_blank" rel="noopener">Algorithm Implementations in C - GitHub</a></li>
+                <li><a href="https://github.com/TheAlgorithms/C-Plus-Plus" target="_blank" rel="noopener">Algorithm Implementations in C++ - GitHub</a></li>
+            </ul>
+        </section>
+
+        <section id="video-editing" aria-label="Video Editing Section">
+            <h2>Video Editing Tutorials</h2>
+            <p>Explore video editing tutorial videos:</p>
+            <div class="video-container" style="margin-bottom:1rem;">
+                <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Sample Video Editing Tutorial" allowfullscreen></iframe>
+            </div>
+            <ul class="resources">
+                <li><a href="https://www.youtube.com/user/FilmoraVideoEditor" target="_blank" rel="noopener">Filmora Official Channel</a></li>
+                <li><a href="https://www.youtube.com/user/JustinOdisho" target="_blank" rel="noopener">Justin Odisho (Photoshop & Video Editing)</a></li>
+            </ul>
+        </section>
+
+        <section id="minecraft-hosting" aria-label="Minecraft Hosting Section">
+            <h2>Minecraft Hosting</h2>
+            <p>Looking to host your own Minecraft server? Here are some free or affordable options:</p>
+            <ul class="resources">
+                <li><a href="https://www.minehut.com/" target="_blank" rel="noopener">Minehut - Free Minecraft Server Hosting</a></li>
+                <li><a href="https://aternos.org/" target="_blank" rel="noopener">Aternos - Free Minecraft Server Hosting</a></li>
+                <li><a href="https://multicraft.org/" target="_blank" rel="noopener">Multicraft Control Panel</a></li>
+            </ul>
+            <p><em>Note: Hosting quality and availability may vary on free services.</em></p>
+        </section>
+
+        <section id="free-movies" aria-label="Free Movies Section">
+            <h2>Watch Free Movies</h2>
+            <p>Enjoy some free-to-watch movies (public domain / Creative Commons):</p>
+            <div class="video-container" style="margin-bottom:1rem;">
+                <iframe src="https://archive.org/embed/BigBuckBunny_328" title="Big Buck Bunny movie" allowfullscreen></iframe>
+            </div>
+            <p>You can also explore <a href="https://archive.org/details/movies" target="_blank" rel="noopener">Archive.org Movies</a> for a great collection.</p>
+        </section>
+
+        <section id="discord-app" aria-label="Discord App Section">
+            <h2>Discord Community</h2>
+            <p>Join our Discord server or get the app to connect with fellow enthusiasts:</p>
+            <a class="btn" href="https://discord.com/download" target="_blank" rel="noopener">Get Discord App</a>
+            <p style="margin-top:1rem;">Or join a community server:</p>
+            <a class="btn" href="https://discord.gg/discord-testers" target="_blank" rel="noopener" aria-label="Join Discord Testers Server">Join Discord Testers</a>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; 2025 VIDCOD. All rights reserved.
+    </footer>
+
+</body>
+
+</html>
